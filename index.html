@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Management System</title>
+    <link href="index.css" stylesheet="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container" id="resumebody">
+        <h2>Resume Management System</h2>
+        <form id="resumeForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" required>
+
+            <label for="about">about:</label>
+            <input type="text" id="about" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" required>
+
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" required>
+
+            <label for="summary">Summary:</label>
+            <textarea id="summary" required></textarea>
+
+            <label for="personalSkills">Personal Skills:</label>
+            <textarea id="personalSkills" required></textarea>
+
+            <label for="projects">Projects:</label>
+            <textarea id="projects" required></textarea>
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" required></textarea>
+
+            <label for="contactDetails">Contact Details:</label>
+            <textarea id="contactDetails" required></textarea>
+
+            <label for="professionalSkills">Professional Skills:</label>
+            <textarea id="professionalSkills" required></textarea>
+
+            <label for="education">Education:</label>
+            <textarea id="education" required></textarea>
+
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+        </form>
+
+        <div id="resumeOutput"></div>
+        <button id="downloadBtn" style="display: none;" onclick="downloadResume()">Download as PDF</button>
+    </div>
+
+    <script src="script.js"></script>
+
+
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+</body>
+
+</html>
